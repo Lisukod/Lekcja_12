@@ -1,2 +1,5 @@
 names.csv new_names.csv 2,0,Michal 8,1,Maciupa 24,2,Marcepan@wp.pl
 names.csv new_names2.csv 2,0,Michal 45,0,Kacper 8,1,Maciupa 18,0,WarszawianinBezImienia 3,0,hot16@onet.com 24,2,marcepan@wp.pl 45,1,Kobylka 1,0,Konstantynopolitanin 
+names.csv nowy.csv 2,0,Michal 8,1,Maciupa 24,2,Marcepan@wp.pl
+names.csv nowy.json 2,0,Michal 45,0,Kacper 8,1,Maciupa 18,0,WarszawianinBezImienia 3,0,hot16@onet.com 24,2,marcepan@wp.pl 45,1,Kobylka 1,0,Konstantynopolitanin 
+names.csv nowy.pickle 2,0,Mariusz 4,0,Bloker 8,1,Maciupa 18,0,WarszawianinBezImienia 3,0,hot16@onet.com 24,2,marcepan@wp.pl 45,1,Kobylka 1,0,Czechosłowak
