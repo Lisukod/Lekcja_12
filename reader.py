@@ -14,7 +14,10 @@ class Reader:
         self.filedest = "./edited/{}".format(filedest)
         self.csvList = []
         try:
-            self.sourceFile = open(self.filesource)
+            if Path(self.filesource).suffix == ".pickle":
+                self.sourceFile = open(self.filesource, "rb")
+            else:
+                self.sourceFile = open(self.filesource)
         except FileNotFoundError:
             print("Błąd. Podana ścieżka nie istnieje")
             exit()
@@ -40,8 +43,6 @@ class Reader:
         elif Path(self.filesource).suffix == ".json":
             file_reader = json.load(self.sourceFile)
         elif Path(self.filesource).suffix == ".pickle":
-            self.sourceFile.close()
-            self.sourceFile = open(self.filesource, "rb")
             file_reader = pickle.load(self.sourceFile)
         for line in file_reader:
             self.csvList.append(line)
